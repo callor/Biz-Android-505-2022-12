@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">안녕</string>
+    <string name="action_settings">설정</string>
+    <string name="first_fragment_label">첫화면</string>
+    <string name="second_fragment_label">두번째 화면</string>
+    <string name="next">다음</string>
+    <string name="previous">이전</string>
+    <string name="hello_first_fragment">안녕하세요</string>
+    <string name="hello_second_fragment">반갑습니다</string>
+    <string name="hello">반갑습니다</string>
+</resources>
