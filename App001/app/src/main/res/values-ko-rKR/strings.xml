@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">처음 어플</string>
+    <string name="hello">반갑습니다</string>
+    <string name="input_hint">단어를 입력하세요</string>
+</resources>

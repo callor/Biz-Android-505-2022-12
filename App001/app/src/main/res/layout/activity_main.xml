@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--
+    ConstraintLayout
+    가로 세로 방향으로 내부의 view 들을 배치하는 Layout
+    이 Layout 을 한편으로 고무줄 Layout 이라고 한다.
+    이 Layout 내부의 view 들은 대부분 다른 view 와 상대적으로 배치하는 모양을 갖는다
+    -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_view"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/input_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
+    layout 에서 left, right, start, end 의 관계
+    일반적으로 layout 을 left, right 를 기준으로 설정을 한다.
+    하지만 일부 layout 에서는 언어 문화권에 따라 기준이 애매한 경우가 있다
+    그래서 언어 문화권을 배려한 차원에서
+    left 는 start, right 는 end 로 사용하기도 한다.
+    각 언어의 읽기 순서에 따라 layout 배치를 적절하게 보이도록 하기 위함이다
+    -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout"
+        tools:text="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/text_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_3d_rotation_24"
+        android:background="#FFEB3B"
+        android:padding="50dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
