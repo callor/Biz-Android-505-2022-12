@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App-002</string>
+    <string name="input_word_hint">Word Input...</string>
+    <string name="btn_save_text">Save</string>
+</resources>

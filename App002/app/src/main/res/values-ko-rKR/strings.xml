@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">나의 단어장</string>
+    <string name="input_word_hint">단어를 입력하세요</string>
+    <string name="btn_save_text">저장</string>
+</resources>
