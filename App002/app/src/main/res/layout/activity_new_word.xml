@@ -6,24 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".NewWordActivity">
 
-    <EditText
-        android:id="@+id/txt_word"
-        android:hint="@string/input_word_hint"
-        android:text="18dp"
-        android:layout_margin="16dp"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_save"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+    <EditText
+        android:id="@+id/txt_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/input_word_hint"
+        android:textSize="18dp"
+        />
 
     <Button
         android:id="@+id/btn_save"
-        android:text="@string/btn_save_text"
-        android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txt_word"
+        android:layout_margin="16dp"
+        android:text="@string/btn_save_text"
         />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

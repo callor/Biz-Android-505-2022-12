@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneCall">
+
+    <!--
+    1개의 EditText : id = txt_phone_number
+    2개의 Button
+    위에서 아래방향으로 배치
+
+    버튼 1 : Text = "전화걸기" : id = btn_call
+    버튼 2 : Text = "전화걸기 바로기기" : id = btn_phone
+    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
