@@ -56,8 +56,8 @@ class MainActivity : AppCompatActivity() {
         val phoneCallBtn = findViewById<FloatingActionButton>(R.id.phone_call)
         phoneCallBtn.setOnClickListener{
             // PhoneCall Activity 가 화면에 나타나도록
-
+            val intent = Intent(this@MainActivity,PhoneCall::class.java)
+            startActivity(intent)
         }
-
     }
 }
