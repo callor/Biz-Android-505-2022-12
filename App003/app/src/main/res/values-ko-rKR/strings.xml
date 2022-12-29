@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">안녕 App</string>
+    <string name="hello">안녕하세요</string>
+    <string name="click">클릭해주세요</string>
+    <string name="open_activity_hint">다른 화면 열기</string>
+    <string name="new_activity_label">나는 두번째 화면</string>
+</resources>

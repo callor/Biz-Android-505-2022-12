@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello App</string>
+    <string name="hello">Hello World!</string>
+    <string name="click">Click</string>
+    <string name="open_activity_hint">Open Next</string>
+    <string name="new_activity_label">Second Play</string>
+</resources>
