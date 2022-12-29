@@ -10,27 +10,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App003"
+        android:theme="@style/Theme.App004"
         tools:targetApi="31">
         <activity
-            android:name=".AddActivity"
+            android:name=".ResultActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="결과확인"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".NewActivity"
-            android:exported="false"
-            android:label="@string/new_activity_label"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+        <!--
+        화면에 키보드가 보이는 상태에서 Snack bar 가 나타나도록 하는 방법
+        android:windowSoftInputMode="adjustResize"
+        이 설정은 키보드 윗쪽에 Snack bar 가 나타나도록 한다.
+        -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
