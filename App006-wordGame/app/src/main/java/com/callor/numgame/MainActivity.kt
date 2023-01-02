@@ -3,6 +3,7 @@ package com.callor.numgame
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import com.callor.numgame.databinding.ActivityMainBinding
@@ -33,9 +34,8 @@ class MainActivity : AppCompatActivity() {
      * 요소로 포함고 있다
      */
     private lateinit var binding: ActivityMainBinding
-    private var rndNumber = 0
     private val MAX_NUM = 30
-
+    private var rndNumber = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -45,7 +45,12 @@ class MainActivity : AppCompatActivity() {
 
         // 1 부터 MAX_NUM 까지 정수중에서 임의 숫자 한개를 추출하여
         // rndNumber 에 저장하라
-        // rndNumber = (1..MAX_NUM).random()
+        if (savedInstanceState != null) {
+            rndNumber = savedInstanceState.getInt("rndNumber")
+        }
+        if(rndNumber === 0)
+            rndNumber = (1..MAX_NUM).random()
+
         Log.d("Main", rndNumber.toString())
 
         // setContentView(R.layout.activity_main)
@@ -71,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnOk.setOnClickListener{ numberOk(it) }
-        binding.txtNumber.setOnEditorActionListener { view, keyCode, event ->
+        binding.txtNumber.setOnEditorActionListener { view, _, _ ->
             numberOk(view)
             // input box 를 클릭하면 화면에 키보드가 보이는 상태가 된다
             // EditActionListener 이벤트를 설정하지 않으면
@@ -84,6 +89,12 @@ class MainActivity : AppCompatActivity() {
             false
         }
     } // end OnCreate
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+//        super.onSaveInstanceState(outState, outPersistentState)
+//        outState.putInt("rndNumber",rndNumber)
+        Log.d("Save","Save") // rndNumber.toString())
+    }
 
     private fun numberOk (view: View) {
         // input 입력된 문자열 추출

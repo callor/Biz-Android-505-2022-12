@@ -2,6 +2,8 @@ package com.callor.numgame
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
 import com.callor.numgame.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {
@@ -23,5 +25,10 @@ class ResultActivity : AppCompatActivity() {
                 rndNumber < inputNumber -> getString(R.string.number_greater_than,inputNumber)
                 else->getString(R.string.number_not)
             }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+        Log.d("Result","Result")
     }
 }
