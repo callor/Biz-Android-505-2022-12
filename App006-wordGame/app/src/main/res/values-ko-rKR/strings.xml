@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">루팡 숫자 맟추기</string>
+    <string name="game_restart">게임을 다시 시작합니다</string>
+    <string name="input_number">숫자를 입력해 주세요</string>
+    <string name="input_numner_range">입력한 숫자 %1$d 는 1 부터 %2$d 범위가 아닙니다</string>
+    <string name="input_hint">%1$d 부터 %2$d 범위의 정수를 입력하세요</string>
+    <string name="number_nan">입력한 숫자 %1$d 는 %2$d 부터 %3$d 범위의 값이 아닙니다</string>
+    <string name="number_fail">입력한 값이 비어있거나, 숫자가 아닙니다</string>
+    <string name="good_job">참 잘했어요 정답~~~ %1$d</string>
+    <string name="number_greater_than">%1$d 는 숫자가 너무 커요</string>
+    <string name="number_less_than">%1$d 는 숫자가 너무 작아요</string>
+    <string name="number_not">알 수 없어요</string>
+    <string name="restart">다시 시작하기</string>
+    <string name="number_ok">확인하기</string>
+</resources>
