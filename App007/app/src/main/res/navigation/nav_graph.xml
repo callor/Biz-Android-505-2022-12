@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <!--
+    navigation.fragment
+    다수의 화면으로 구성된 프로젝트에서 Activity 를 사용하지 않고
+    fragment 를 이용하여 화면을 구성할 경우
+    한 activity 에서 다수의 fragment 들을 교체해 가면서 화면을 보여주게 된다
+    이때, 순수하게 Kotlin 코드만으로 구현을 하면
+    많은 양의 코드가 필요하다.
+    최신 안드로이드에서는 navigation.fragment 라는 도구를 지원하여
+    조금은 쉽게 화면전환을 할수 있도록 만들어 준다
+    -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.callor.app_007.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_subFragment"
+            app:destination="@id/subFragment" />
+        <argument
+            android:name="nation"
+            app:argType="string"
+            android:defaultValue="Korea" />
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/subFragment"
+        android:name="com.callor.app_007.SubFragment"
+        android:label="fragment_sub"
+        tools:layout="@layout/fragment_sub" >
+        <action
+            android:id="@+id/action_subFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="nation"
+            app:argType="string"
+            android:defaultValue="Korea" />
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

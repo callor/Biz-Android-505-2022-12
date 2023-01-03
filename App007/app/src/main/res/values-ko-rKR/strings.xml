@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">007 어플</string>
+    <string name="hello_blank_fragment">안녕하세요</string>
+    <string name="string_go_sub">두번째 화면 가기</string>
+    <string name="hello_sub_fragment">반갑습니다 2번째 화면입니다</string>
+</resources>
