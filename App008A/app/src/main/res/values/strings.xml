@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App 007</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_go_sub">Go Sub Screen</string>
+    <string name="hello_sub_fragment">Hello Sub Fragment</string>
+    <string name="word_ok">Input word OK!!</string>
+    <string name="fragment_main">Input Word</string>
+    <string name="fragment_sub">Word OK~!!</string>
+    <string name="input_word">Enter English Word</string>
+    <string name="add_word">ADD Word</string>
+</resources>
