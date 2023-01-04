@@ -31,6 +31,10 @@ class WordViewModel : ViewModel() {
      */
     val engWord : LiveData<String> get() = _engWord
 
+
+    val inputText by lazy { MutableLiveData("")}
+
+
     /**
      * 외부에서 engWord 변수에 접근하여
      * 데이터를 저장하는 함수
@@ -41,6 +45,9 @@ class WordViewModel : ViewModel() {
 
     private var _currentWord = MutableLiveData<String>("")
     val currentWord :LiveData<String> get() = _currentWord
+    fun set(word:String) {
+        _currentWord.value = word
+    }
     init {
         nextWord()
     }
