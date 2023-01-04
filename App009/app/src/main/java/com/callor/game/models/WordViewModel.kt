@@ -52,7 +52,7 @@ class WordViewModel : ViewModel() {
         rndString.shuffle()
         
         // char 배열을 문자열(String) 으로 변환시키기
-        _currentWord.value = rndString.joinToString { " " }
+        _currentWord.value = rndString.joinToString (separator = " ")
     }
 
 }
