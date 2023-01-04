@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Callor.TextInputLayout.OutLineBox"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <item name="boxStrokeColor">@color/red_400</item>
+        <item name="errorIconTint">@color/red_400</item>
+        <item name="errorTextColor">@color/red_400</item>
+        <item name="errorIconDrawable">@drawable/ic_baseline_error_24</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+
+</resources>
