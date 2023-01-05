@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">단어를 찾아주세요!!</string>
+    <string name="instructions">주어진 알파벳으로 단어를 맞춰주세요</string>
+    <string name="input_word">단어를 입력하세요</string>
+    <string name="submit">확인</string>
+    <string name="skip">건너뛰기</string>
+</resources>

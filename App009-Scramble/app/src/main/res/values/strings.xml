@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scramble Word</string>
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">SKIP</string>
+    <string name="input_word">Input Word</string>
+    <string name="submit">SUBMIT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
