@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/student_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/student_list_item"
+    tools:context=".MainListFragment">
+
+    <!--
+    RecyclerView
+    안드로이드에서 다수의 데이터를 List 형식으로 나열하여 보여주는 Layout
+
+    내부에 itemView(list_item) 가 포함되어 List 의 데이터를 표현하는 것이 필요하다
+
+    -->
+
+
+</androidx.recyclerview.widget.RecyclerView>

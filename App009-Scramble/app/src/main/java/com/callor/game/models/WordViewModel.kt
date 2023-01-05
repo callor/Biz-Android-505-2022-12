@@ -21,6 +21,8 @@ class WordViewModel : ViewModel() {
     var unscrambleWord = MutableLiveData("")
     var inputWord = MutableLiveData("")
 
+
+
     /**
      * 게임을 하는 과정에서 맞춘 점수
      * 시행한 게임 수 등을 저장할 변수
