@@ -1,46 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:orientation="horizontal">
+<layout>
 
-    <LinearLayout
-        android:id="@+id/layout_name"
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content">
+    <data>
+        <variable
+            name="stView"
+            type="com.callor.student.data.Student" />
+    </data>
 
-        <TextView
-            android:id="@+id/st_num"
-            android:text="S0001"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/st_name"
-            android:text="홍길동"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/st_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{stView.stNum}" />
+
+            <TextView
+                android:id="@+id/st_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{stView.stName}" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/st_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{stView.stTel}" />
+
+            <TextView
+                android:id="@+id/st_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{stView.stAddr}" />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/addr"
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_weight="3"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/st_tel"
-            android:text="010-1111-1111"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/st_addr"
-            android:text="광주광역시"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-
-
-</LinearLayout>
+</layout>

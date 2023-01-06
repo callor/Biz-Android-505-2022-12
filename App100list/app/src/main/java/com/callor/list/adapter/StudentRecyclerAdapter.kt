@@ -44,8 +44,11 @@ class StudentRecyclerAdapter(private val studentList: MutableList<StudentDto>) :
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
+        //  List 에서 1개의 데이터를 추출하여
         val item = studentList[position]
         val stHolder = holder as StudentViewHolder
+
+        // 개별데이터를 view 의 text 속성에 setting 하기
         stHolder.txtStName.text = item.name.toString()
         stHolder.txtStNum.text = item.num.toString()
         stHolder.txtStAddr.text = item.address.toString()
@@ -66,12 +69,13 @@ class StudentRecyclerAdapter(private val studentList: MutableList<StudentDto>) :
      */
     inner class StudentViewHolder(binding: StudentListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
+        // xml 파일의 view 요소들을 각각 개별 변수에 할당
         val txtStNum: TextView = binding.stNum
         val txtStName: TextView = binding.stName
         val txtStAddr: TextView = binding.stAddr
         val txtStTel: TextView = binding.stTel
     }
-
 
 }
 
